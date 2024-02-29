@@ -7,3 +7,6 @@ https://github.com/IntelRealSense/librealsense/blob/master/wrappers/python/examp
 
 yolov8
 https://qiita.com/napspans/items/9ddc80e4625314c5607d
+
+ransac
+https://tech-deliberate-jiro.com/python-ransac/
