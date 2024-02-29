@@ -2,7 +2,12 @@ import open3d as o3d
 
 # 点群の読み込み
 pcd = o3d.io.read_point_cloud("../data/pc_color.pcd")
+
 # 引数を設定して、平面を推定
+# https://www.open3d.org/docs/latest/tutorial/Basic/pointcloud.html
+# distance_threshold:インライアとみなされる推定平面までの最大距離
+# ransac_n:平面をすいていするためにランダムにアンプリングされる点
+# num_iterations:ランダム平面がサンプリングされる頻度
 plane_model, inliers = pcd.segment_plane(distance_threshold=0.01,
                                          ransac_n=3,
                                          num_iterations=1000)
